@@ -156,7 +156,7 @@ describe('Todos', () => {
       .patch(`/todos/${v4()}/done`)
       .set('username', userResponse.body.username)
       .expect(404);
-
+    
     expect(response.body.error).toBeTruthy();
   });
 
